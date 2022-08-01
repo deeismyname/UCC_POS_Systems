@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Restaurant extends Model
 {
-    use HasFactory;
+    // use HasFactory;
+    protected $table = 'restaurants';
+    protected $fillable = ['restaurant_name', 'phone', 'email', 'location'];
 }
