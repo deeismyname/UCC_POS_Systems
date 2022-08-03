@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('menu_name');
             $table->foreignId('restaurant_id');
-            $table->json('repeat');
+            $table->json('reuse');
             $table->tinyInteger('customize')->default(0);
             $table->json('description');
             $table->string('unit_cost');

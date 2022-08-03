@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
-            $table->foreignId('restaurant_id');
+            $table->foreignId('restaurant_id')->default(1);
             $table->tinyInteger('position')->default(2);
             $table->timestamps();
         });
