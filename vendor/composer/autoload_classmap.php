@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
+<<<<<<< HEAD
     'App\\Http\\Controllers\\Auth\\AuthenticatedSessionController' => $baseDir . '/app/Http/Controllers/Auth/AuthenticatedSessionController.php',
     'App\\Http\\Controllers\\Auth\\ConfirmablePasswordController' => $baseDir . '/app/Http/Controllers/Auth/ConfirmablePasswordController.php',
     'App\\Http\\Controllers\\Auth\\EmailVerificationNotificationController' => $baseDir . '/app/Http/Controllers/Auth/EmailVerificationNotificationController.php',
@@ -16,7 +17,27 @@ return array(
     'App\\Http\\Controllers\\Auth\\PasswordResetLinkController' => $baseDir . '/app/Http/Controllers/Auth/PasswordResetLinkController.php',
     'App\\Http\\Controllers\\Auth\\RegisteredUserController' => $baseDir . '/app/Http/Controllers/Auth/RegisteredUserController.php',
     'App\\Http\\Controllers\\Auth\\VerifyEmailController' => $baseDir . '/app/Http/Controllers/Auth/VerifyEmailController.php',
+||||||| e085343
+=======
+    'App\\Http\\Controllers\\Auth\\AuthenticatedSessionController' => $baseDir . '/app/Http/Controllers/Auth/AuthenticatedSessionController.php',
+    'App\\Http\\Controllers\\Auth\\ConfirmablePasswordController' => $baseDir . '/app/Http/Controllers/Auth/ConfirmablePasswordController.php',
+    'App\\Http\\Controllers\\Auth\\EmailVerificationNotificationController' => $baseDir . '/app/Http/Controllers/Auth/EmailVerificationNotificationController.php',
+    'App\\Http\\Controllers\\Auth\\EmailVerificationPromptController' => $baseDir . '/app/Http/Controllers/Auth/EmailVerificationPromptController.php',
+    'App\\Http\\Controllers\\Auth\\NewPasswordController' => $baseDir . '/app/Http/Controllers/Auth/NewPasswordController.php',
+    'App\\Http\\Controllers\\Auth\\PasswordResetLinkController' => $baseDir . '/app/Http/Controllers/Auth/PasswordResetLinkController.php',
+    'App\\Http\\Controllers\\Auth\\RegisteredUserController' => $baseDir . '/app/Http/Controllers/Auth/RegisteredUserController.php',
+    'App\\Http\\Controllers\\Auth\\VerifyEmailController' => $baseDir . '/app/Http/Controllers/Auth/VerifyEmailController.php',
+    'App\\Http\\Controllers\\CategoryController' => $baseDir . '/app/Http/Controllers/CategoryController.php',
+>>>>>>> 59d359ec05a81a9f6c1ce144d723fe6aa2a8bb7a
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
+    'App\\Http\\Controllers\\CustomersController' => $baseDir . '/app/Http/Controllers/CustomersController.php',
+    'App\\Http\\Controllers\\DrinksController' => $baseDir . '/app/Http/Controllers/DrinksController.php',
+    'App\\Http\\Controllers\\ExtraController' => $baseDir . '/app/Http/Controllers/ExtraController.php',
+    'App\\Http\\Controllers\\OrdersController' => $baseDir . '/app/Http/Controllers/OrdersController.php',
+    'App\\Http\\Controllers\\PastriesController' => $baseDir . '/app/Http/Controllers/PastriesController.php',
+    'App\\Http\\Controllers\\ProteinController' => $baseDir . '/app/Http/Controllers/ProteinController.php',
+    'App\\Http\\Controllers\\RestaurantController' => $baseDir . '/app/Http/Controllers/RestaurantController.php',
+    'App\\Http\\Controllers\\SauceController' => $baseDir . '/app/Http/Controllers/SauceController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
     'App\\Http\\Middleware\\EncryptCookies' => $baseDir . '/app/Http/Middleware/EncryptCookies.php',
@@ -26,8 +47,23 @@ return array(
     'App\\Http\\Middleware\\TrustHosts' => $baseDir . '/app/Http/Middleware/TrustHosts.php',
     'App\\Http\\Middleware\\TrustProxies' => $baseDir . '/app/Http/Middleware/TrustProxies.php',
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
+<<<<<<< HEAD
     'App\\Http\\Requests\\Auth\\LoginRequest' => $baseDir . '/app/Http/Requests/Auth/LoginRequest.php',
+||||||| e085343
+=======
+    'App\\Http\\Requests\\Auth\\LoginRequest' => $baseDir . '/app/Http/Requests/Auth/LoginRequest.php',
+    'App\\Models\\Restaurant' => $baseDir . '/app/Models/Restaurant.php',
+>>>>>>> 59d359ec05a81a9f6c1ce144d723fe6aa2a8bb7a
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
+    'App\\Models\\category' => $baseDir . '/app/Models/category.php',
+    'App\\Models\\customers' => $baseDir . '/app/Models/customers.php',
+    'App\\Models\\drinks' => $baseDir . '/app/Models/drinks.php',
+    'App\\Models\\extra' => $baseDir . '/app/Models/extra.php',
+    'App\\Models\\menu' => $baseDir . '/app/Models/menu.php',
+    'App\\Models\\orders' => $baseDir . '/app/Models/orders.php',
+    'App\\Models\\pastries' => $baseDir . '/app/Models/pastries.php',
+    'App\\Models\\protein' => $baseDir . '/app/Models/protein.php',
+    'App\\Models\\sauce' => $baseDir . '/app/Models/sauce.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',
     'App\\Providers\\BroadcastServiceProvider' => $baseDir . '/app/Providers/BroadcastServiceProvider.php',
