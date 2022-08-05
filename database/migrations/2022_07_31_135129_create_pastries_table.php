@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id('pastry_id');
             $table->string('pastry_name');
             $table->string('unit_cost');
+            $table->foreignId('restaurant_id');
             $table->timestamps();
         });
     }

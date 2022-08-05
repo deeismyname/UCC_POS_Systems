@@ -16,6 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+})->middleware(['auth']);
+
+Route::get('/welcome', function () {
+    return view('welcome');
 });
 
 Route::get('/dashboard', function () {
@@ -23,8 +27,23 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 
-Route::get('/menu', function () {
-    return view('menu');
+Route::get('/menu', [MenuController::class,'index']);
+Route::post('/menu',[MenuController::class, 'store'])->name('menu');
+
+Route::get('/inventory', function () {
+    return view('inventory');
+});
+
+Route::get('/orders', function () {
+    return view('orders');
+});
+
+Route::get('/settings', function () {
+    return view('settings');
+});
+
+Route::get('/about', function () {
+    return view('about');
 });
 
 require __DIR__.'/auth.php';

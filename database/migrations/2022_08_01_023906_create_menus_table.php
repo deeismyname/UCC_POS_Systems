@@ -16,11 +16,11 @@ return new class extends Migration
         Schema::create('menus', function (Blueprint $table) {
             $table->id();
             $table->string('menu_name');
-            $table->foreignId('restaurant_id');
-            $table->json('reuse');
+            $table->foreignId('restaurant_id')->default(1);
+            $table->json('reuse')->nullable();
             $table->tinyInteger('customize')->default(0);
-            $table->json('description');
-            $table->string('unit_cost');
+            $table->json('description')->nullable();
+            $table->string('unit_cost')->nullable();
             $table->timestamps();
 
         });
