@@ -30,13 +30,11 @@ Route::get('/dashboard', function () {
 Route::get('/menu', [MenuController::class,'index']);
 Route::post('/menu',[MenuController::class, 'store'])->name('menu');
 
-Route::get('/inventory', function () {
-    return view('inventory');
-});
+Route::get('/inventory', [MenuController::class,'index']);
+Route::post('/inventory',[MenuController::class, 'store'])->name('inventory');
 
-Route::get('/orders', function () {
-    return view('orders');
-});
+Route::get('/orders', [MenuController::class,'index']);
+Route::post('/orders',[MenuController::class, 'store'])->name('orders');
 
 Route::get('/settings', function () {
     return view('settings');

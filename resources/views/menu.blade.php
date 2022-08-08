@@ -14,19 +14,23 @@
         <form action="" method="post">
             <div class="menu">
                 <h2>
-
-                    <a href="menus/{{$menu->id}}">
                         {{$menu->menu_name}}
-                    </a>
                 </h2>
 
-                <div class="details">
-                    @foreach ($menu->description as $item)
+                {{-- <div class="details">
+                    @foreach ($menu->reuse as $item)
                     <h5>{{$item}}</h5> <span class="space"></span>
                     @endforeach
-                </div>
+                </div> --}}
+
+
+                @foreach($menu->description as $item)
+                {{ $item }}
+            @endforeach
+
 
                 <h3>Price:{{$menu->unit_cost}}¢</h3>
+
 
                 <button>Place order</button>
             </div>
@@ -59,25 +63,5 @@
 
     .space {
         padding: 3px;
-    }
-
-    .pop_up{
-        background-color: rgba(25, 179, 211, 0.6);
-        width: 87%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        display: flex;
-        align-items: center;
-    }
-
-    .pop_up_content {
-        height: 4rem;
-        width: 6rem;
-        background-color: #fff;
-        padding: 15rem;
-        position: relative;
-        font-s
     }
 </style>

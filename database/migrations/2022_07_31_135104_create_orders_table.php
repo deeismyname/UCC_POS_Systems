@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id('order_id');
             $table->foreignId('customer_id');
             $table->foreignId('restaurant_id');
-            $table->json('components');
+            $table->string('components');
             $table->timestamps();
         });
     }

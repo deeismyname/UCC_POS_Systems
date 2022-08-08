@@ -17,9 +17,30 @@
                 @csrf
                 <input type="text" name="menu_name" placeholder="enter dish name">
                 <input type="text" name="unit_cost" placeholder="unit cost (without symbol)">
+
+                <div class="repeat">
+                    {{-- <h4>Repeat menu on:</h4>
+                <input type="checkbox" id="Monday" name="reuse" value="Monday">
+                <label for="Monday"> Monday</label><br>
+                <input type="checkbox" id="Teusday" name="reuse" value="Teusday">
+                <label for="Teusday"> Tuesday</label><br>
+                <input type="checkbox" id="Wednesday" name="reuse" value="Wednesday">
+                <label for="Wednesday"> Wednesday</label><br>
+                <input type="checkbox" id="Thursday" name="reuse" value="Thursday">
+                <label for="Thursday"> Thursday</label><br>
+                <input type="checkbox" id="Friday" name="reuse" value="Friday">
+                <label for="Friday"> Friday</label><br>
+                <input type="checkbox" id="Saturday" name="reuse" value="Saturday">
+                <label for="Saturday"> Saturday</label><br>
+                <input type="checkbox" id="Sunday" name="reuse" value="Sunday">
+                <label for="Sunday"> Sunday</label><br> --}}
+                <input type="text" name="reuse" placeholder="enter the days you want the menu to be repeated seperated by a comma">
+                </div>
+
                 <div class="mt-3 flex justify-end space-x-3">
                     <button class="px-3 py-1 rounded hover:bg-red-500 hover:bg-opacity-10 hover:text-white-500">Cancel</button>
                     <button type="submit" class="px-3 py-1 bg-green-300 text-gray-600 hover:bg-green-800 rounded">Add</button>
+
                 </div>
                </form>
         </div>
