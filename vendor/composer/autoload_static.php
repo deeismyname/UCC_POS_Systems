@@ -521,6 +521,17 @@ class ComposerStaticInit2e626a1dc337aa1de3791093c3ef5619
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+<<<<<<< HEAD
+        'App\\Http\\Controllers\\Auth\\AuthenticatedSessionController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/AuthenticatedSessionController.php',
+        'App\\Http\\Controllers\\Auth\\ConfirmablePasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmablePasswordController.php',
+        'App\\Http\\Controllers\\Auth\\EmailVerificationNotificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/EmailVerificationNotificationController.php',
+        'App\\Http\\Controllers\\Auth\\EmailVerificationPromptController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/EmailVerificationPromptController.php',
+        'App\\Http\\Controllers\\Auth\\NewPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/NewPasswordController.php',
+        'App\\Http\\Controllers\\Auth\\PasswordResetLinkController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/PasswordResetLinkController.php',
+        'App\\Http\\Controllers\\Auth\\RegisteredUserController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisteredUserController.php',
+        'App\\Http\\Controllers\\Auth\\VerifyEmailController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerifyEmailController.php',
+||||||| e085343
+=======
         'App\\Http\\Controllers\\Auth\\AuthenticatedSessionController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/AuthenticatedSessionController.php',
         'App\\Http\\Controllers\\Auth\\ConfirmablePasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmablePasswordController.php',
         'App\\Http\\Controllers\\Auth\\EmailVerificationNotificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/EmailVerificationNotificationController.php',
@@ -530,6 +541,7 @@ class ComposerStaticInit2e626a1dc337aa1de3791093c3ef5619
         'App\\Http\\Controllers\\Auth\\RegisteredUserController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisteredUserController.php',
         'App\\Http\\Controllers\\Auth\\VerifyEmailController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerifyEmailController.php',
         'App\\Http\\Controllers\\CategoryController' => __DIR__ . '/../..' . '/app/Http/Controllers/CategoryController.php',
+>>>>>>> 59d359ec05a81a9f6c1ce144d723fe6aa2a8bb7a
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\CustomersController' => __DIR__ . '/../..' . '/app/Http/Controllers/CustomersController.php',
         'App\\Http\\Controllers\\DrinksController' => __DIR__ . '/../..' . '/app/Http/Controllers/DrinksController.php',
@@ -548,8 +560,13 @@ class ComposerStaticInit2e626a1dc337aa1de3791093c3ef5619
         'App\\Http\\Middleware\\TrustHosts' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustHosts.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+<<<<<<< HEAD
+        'App\\Http\\Requests\\Auth\\LoginRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Auth/LoginRequest.php',
+||||||| e085343
+=======
         'App\\Http\\Requests\\Auth\\LoginRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Auth/LoginRequest.php',
         'App\\Models\\Restaurant' => __DIR__ . '/../..' . '/app/Models/Restaurant.php',
+>>>>>>> 59d359ec05a81a9f6c1ce144d723fe6aa2a8bb7a
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Models\\category' => __DIR__ . '/../..' . '/app/Models/category.php',
         'App\\Models\\customers' => __DIR__ . '/../..' . '/app/Models/customers.php',
@@ -2087,6 +2104,7 @@ class ComposerStaticInit2e626a1dc337aa1de3791093c3ef5619
         'Illuminate\\Foundation\\Console\\ConfigCacheCommand' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Console/ConfigCacheCommand.php',
         'Illuminate\\Foundation\\Console\\ConfigClearCommand' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Console/ConfigClearCommand.php',
         'Illuminate\\Foundation\\Console\\ConsoleMakeCommand' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Console/ConsoleMakeCommand.php',
+        'Illuminate\\Foundation\\Console\\DocsCommand' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Console/DocsCommand.php',
         'Illuminate\\Foundation\\Console\\DownCommand' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Console/DownCommand.php',
         'Illuminate\\Foundation\\Console\\EnvironmentCommand' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Console/EnvironmentCommand.php',
         'Illuminate\\Foundation\\Console\\EventCacheCommand' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Console/EventCacheCommand.php',
@@ -2497,6 +2515,7 @@ class ComposerStaticInit2e626a1dc337aa1de3791093c3ef5619
         'Illuminate\\Support\\Facades\\URL' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/Facades/URL.php',
         'Illuminate\\Support\\Facades\\Validator' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/Facades/Validator.php',
         'Illuminate\\Support\\Facades\\View' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/Facades/View.php',
+        'Illuminate\\Support\\Facades\\Vite' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/Facades/Vite.php',
         'Illuminate\\Support\\Fluent' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/Fluent.php',
         'Illuminate\\Support\\HigherOrderCollectionProxy' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Collections/HigherOrderCollectionProxy.php',
         'Illuminate\\Support\\HigherOrderTapProxy' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/HigherOrderTapProxy.php',

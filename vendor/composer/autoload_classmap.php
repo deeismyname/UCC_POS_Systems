@@ -8,6 +8,17 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
+<<<<<<< HEAD
+    'App\\Http\\Controllers\\Auth\\AuthenticatedSessionController' => $baseDir . '/app/Http/Controllers/Auth/AuthenticatedSessionController.php',
+    'App\\Http\\Controllers\\Auth\\ConfirmablePasswordController' => $baseDir . '/app/Http/Controllers/Auth/ConfirmablePasswordController.php',
+    'App\\Http\\Controllers\\Auth\\EmailVerificationNotificationController' => $baseDir . '/app/Http/Controllers/Auth/EmailVerificationNotificationController.php',
+    'App\\Http\\Controllers\\Auth\\EmailVerificationPromptController' => $baseDir . '/app/Http/Controllers/Auth/EmailVerificationPromptController.php',
+    'App\\Http\\Controllers\\Auth\\NewPasswordController' => $baseDir . '/app/Http/Controllers/Auth/NewPasswordController.php',
+    'App\\Http\\Controllers\\Auth\\PasswordResetLinkController' => $baseDir . '/app/Http/Controllers/Auth/PasswordResetLinkController.php',
+    'App\\Http\\Controllers\\Auth\\RegisteredUserController' => $baseDir . '/app/Http/Controllers/Auth/RegisteredUserController.php',
+    'App\\Http\\Controllers\\Auth\\VerifyEmailController' => $baseDir . '/app/Http/Controllers/Auth/VerifyEmailController.php',
+||||||| e085343
+=======
     'App\\Http\\Controllers\\Auth\\AuthenticatedSessionController' => $baseDir . '/app/Http/Controllers/Auth/AuthenticatedSessionController.php',
     'App\\Http\\Controllers\\Auth\\ConfirmablePasswordController' => $baseDir . '/app/Http/Controllers/Auth/ConfirmablePasswordController.php',
     'App\\Http\\Controllers\\Auth\\EmailVerificationNotificationController' => $baseDir . '/app/Http/Controllers/Auth/EmailVerificationNotificationController.php',
@@ -17,6 +28,7 @@ return array(
     'App\\Http\\Controllers\\Auth\\RegisteredUserController' => $baseDir . '/app/Http/Controllers/Auth/RegisteredUserController.php',
     'App\\Http\\Controllers\\Auth\\VerifyEmailController' => $baseDir . '/app/Http/Controllers/Auth/VerifyEmailController.php',
     'App\\Http\\Controllers\\CategoryController' => $baseDir . '/app/Http/Controllers/CategoryController.php',
+>>>>>>> 59d359ec05a81a9f6c1ce144d723fe6aa2a8bb7a
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Controllers\\CustomersController' => $baseDir . '/app/Http/Controllers/CustomersController.php',
     'App\\Http\\Controllers\\DrinksController' => $baseDir . '/app/Http/Controllers/DrinksController.php',
@@ -35,8 +47,13 @@ return array(
     'App\\Http\\Middleware\\TrustHosts' => $baseDir . '/app/Http/Middleware/TrustHosts.php',
     'App\\Http\\Middleware\\TrustProxies' => $baseDir . '/app/Http/Middleware/TrustProxies.php',
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
+<<<<<<< HEAD
+    'App\\Http\\Requests\\Auth\\LoginRequest' => $baseDir . '/app/Http/Requests/Auth/LoginRequest.php',
+||||||| e085343
+=======
     'App\\Http\\Requests\\Auth\\LoginRequest' => $baseDir . '/app/Http/Requests/Auth/LoginRequest.php',
     'App\\Models\\Restaurant' => $baseDir . '/app/Models/Restaurant.php',
+>>>>>>> 59d359ec05a81a9f6c1ce144d723fe6aa2a8bb7a
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
     'App\\Models\\category' => $baseDir . '/app/Models/category.php',
     'App\\Models\\customers' => $baseDir . '/app/Models/customers.php',
@@ -1574,6 +1591,7 @@ return array(
     'Illuminate\\Foundation\\Console\\ConfigCacheCommand' => $vendorDir . '/laravel/framework/src/Illuminate/Foundation/Console/ConfigCacheCommand.php',
     'Illuminate\\Foundation\\Console\\ConfigClearCommand' => $vendorDir . '/laravel/framework/src/Illuminate/Foundation/Console/ConfigClearCommand.php',
     'Illuminate\\Foundation\\Console\\ConsoleMakeCommand' => $vendorDir . '/laravel/framework/src/Illuminate/Foundation/Console/ConsoleMakeCommand.php',
+    'Illuminate\\Foundation\\Console\\DocsCommand' => $vendorDir . '/laravel/framework/src/Illuminate/Foundation/Console/DocsCommand.php',
     'Illuminate\\Foundation\\Console\\DownCommand' => $vendorDir . '/laravel/framework/src/Illuminate/Foundation/Console/DownCommand.php',
     'Illuminate\\Foundation\\Console\\EnvironmentCommand' => $vendorDir . '/laravel/framework/src/Illuminate/Foundation/Console/EnvironmentCommand.php',
     'Illuminate\\Foundation\\Console\\EventCacheCommand' => $vendorDir . '/laravel/framework/src/Illuminate/Foundation/Console/EventCacheCommand.php',
@@ -1984,6 +2002,7 @@ return array(
     'Illuminate\\Support\\Facades\\URL' => $vendorDir . '/laravel/framework/src/Illuminate/Support/Facades/URL.php',
     'Illuminate\\Support\\Facades\\Validator' => $vendorDir . '/laravel/framework/src/Illuminate/Support/Facades/Validator.php',
     'Illuminate\\Support\\Facades\\View' => $vendorDir . '/laravel/framework/src/Illuminate/Support/Facades/View.php',
+    'Illuminate\\Support\\Facades\\Vite' => $vendorDir . '/laravel/framework/src/Illuminate/Support/Facades/Vite.php',
     'Illuminate\\Support\\Fluent' => $vendorDir . '/laravel/framework/src/Illuminate/Support/Fluent.php',
     'Illuminate\\Support\\HigherOrderCollectionProxy' => $vendorDir . '/laravel/framework/src/Illuminate/Collections/HigherOrderCollectionProxy.php',
     'Illuminate\\Support\\HigherOrderTapProxy' => $vendorDir . '/laravel/framework/src/Illuminate/Support/HigherOrderTapProxy.php',
