@@ -69,7 +69,9 @@ class MenuController extends Controller
      */
     public function edit(menu $menu)
     {
-        return view('components.edit_menu');
+        return view('edit_menu',
+        ['menu' =>$menu]
+    );
     }
 
     /**

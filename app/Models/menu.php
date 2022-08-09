@@ -17,4 +17,7 @@ class menu extends Model
 
     // protected $fillable = ['menu_name', 'unit_cost', 'customize', 'description'];
     protected $guarded = ['id'];
+
+
+    
 }
