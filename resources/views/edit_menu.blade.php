@@ -13,8 +13,8 @@
 
     <div class="mt-2 text-sm">
         <form action="{{ route('update_menu', $menu->id) }}" method="POST">
-            @method('patch')
             @csrf
+            @method('patch')
             <input type="text" name="menu_name" placeholder="enter dish name">
             <input type="text" name="unit_cost" placeholder="unit cost (without symbol)">
 
@@ -33,7 +33,7 @@
                 <input type="checkbox" id="Saturday" name="reuse[]" value="Saturday">
                 <label for="Saturday"> Saturday</label><br>
                 <input type="checkbox" id="Sunday" name="reuse[]" value="Sunday">
-                <label for="Sunday"> Sunday</label><br>
+                <label for="Sunday"> Sunday</label><br> --}}
                 {{-- <input type="text" name="reuse" placeholder="enter the days you want the menu to be repeated seperated by a comma"> --}}
             </div>
 
