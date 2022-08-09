@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
@@ -33,14 +34,14 @@
             <img src="1.png" class="mobile_profile_image" alt="">
             <i class="fa fa-bars nav_btn"></i>
         </div>
-        <div class="mobile_nav_items">
+        {{-- <div class="mobile_nav_items">
             <a href="#"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
             <a href="#"><i class="fas fa-cogs"></i><span>Components</span></a>
             <a href="#"><i class="fas fa-table"></i><span>Tables</span></a>
             <a href="#"><i class="fas fa-th"></i><span>Forms</span></a>
             <a href="#"><i class="fas fa-info-circle"></i><span>About</span></a>
             <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a>
-        </div>
+        </div> --}}
     </div>
     <!--mobile navigation bar end-->
     <!--sidebar start-->
@@ -49,12 +50,12 @@
             <img src="1.png" class="profile_image" alt="">
             <h4>Jessica</h4>
         </div>
-        <a href="#"><i class=" fa fa-home"></i><span>Home</span></a>
-        <a href="#"><i class="fas fa-cogs"></i><span>Inventory</span></a>
-        <a href="#"><i class="fa-solid fa-bowl-hot"></i><span>Orders</span></a>
-        <a href="#"><i class="fas fa-th"></i><span>Menu</span></a>
-        <a href="#"><i class="fas fa-info-circle"></i><span>About</span></a>
-        <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a>
+        <a href="/welcome"><i class=" fa fa-home"></i><span>Home</span></a>
+        <a href="/inventory"><i class="fas fa-cogs"></i><span>Inventory</span></a>
+        <a href="/orders"><i class="fa-solid fa-bowl-hot"></i><span>Orders</span></a>
+        <a href="/menu"><i class="fas fa-th"></i><span>Menu</span></a>
+        <a href="/about"><i class="fas fa-info-circle"></i><span>About</span></a>
+        <a href="/settings"><i class="fas fa-sliders-h"></i><span>Settings</span></a>
     </div>
     <!--sidebar end-->
 
@@ -70,9 +71,9 @@
         });
     </script>
 
+
 </body>
 
 </html>
 
 
-<i class="fa-solid fa-pot-food"></i>

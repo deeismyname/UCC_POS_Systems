@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('customer_name')->nullable();
             $table->string('delivery_location')->nullable();
             $table->integer('delivery')->default(0);
+            $table->foreignId('restaurant_id');
             $table->string('phone');
             $table->timestamps();
         });

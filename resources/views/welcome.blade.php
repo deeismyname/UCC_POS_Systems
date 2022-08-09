@@ -22,21 +22,25 @@
     </div>
 
     <div>
-        <div class="orders">
-            <h2>INVENTORY</h2>
+        <a href="./inventory">
+             <div class="orders">
+                <h2>INVENTORY</h2>
 
-            <div class="pending"><p></p></div>
+                <div class="pending"><p></p></div>
 
-            <div class="confirmed"><P>TAKE INVENTORY</P></div>
-        </div>
+                <div class="confirmed"><P>TAKE INVENTORY</P></div>
+            </div>
+        </a>
 
-        <div class="orders">
-            <h2>ODER TRACKING</h2>
+        <a href="./orders">
+            <div class="orders">
+                <h2>ODER TRACKING</h2>
 
-            <div class="pending"><p>PENDING</p></div>
+                <div class="pending"><p>PENDING</p></div>
 
-            <div class="confirmed"><P>CONFIRMED</P></div>
-        </div>
+                <div class="confirmed"><P>CONFIRMED</P></div>
+            </div>
+        </a>
     </div>
 
 </div>

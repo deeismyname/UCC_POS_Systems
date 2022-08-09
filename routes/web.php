@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\MenuController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MenuController;
+use App\Http\Controllers\OrdersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+})->middleware(['auth']);
+
+Route::get('/welcome', function () {
+    return view('welcome');
 });
 
 Route::get('/dashboard', function () {
@@ -23,8 +28,23 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 
-Route::get('/menu', function () {
-    return view('menu');
+Route::get('/menu', [MenuController::class,'index']);
+Route::post('/menu',[MenuController::class, 'store'])->name('menu');
+Route::get("/menu/{menu}/edit_menu",[MenuController::class, 'edit'])->name('edit_menu');
+Route::patch("/menu/{menu}",[MenuController::class, 'update'])->name('update_menu');
+
+Route::get('/inventory', [InventoryController::class,'index']);
+Route::post('/inventory',[InventoryController::class, 'store'])->name('inventory');
+
+Route::get('/orders', [OrdersController::class,'index']);
+Route::post('/orders',[OrdersController::class, 'store'])->name('orders');
+
+Route::get('/settings', function () {
+    return view('settings');
+});
+
+Route::get('/about', function () {
+    return view('about');
 });
 
 require __DIR__.'/auth.php';

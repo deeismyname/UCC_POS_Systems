@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id('extra_id');
             $table->string('extra_name');
             $table->string('unit_cost');
+            $table->foreignId('restaurant_id');
             $table->timestamps();
         });
     }

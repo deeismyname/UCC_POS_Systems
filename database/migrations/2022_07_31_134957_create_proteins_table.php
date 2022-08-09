@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id('protein_id');
             $table->string('protein_name');
             $table->string('unit_cost');
+            $table->foreignId('restaurant_id');
             $table->timestamps();
         });
     }

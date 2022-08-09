@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('sauces', function (Blueprint $table) {
             $table->id('sauce_id');
             $table->string('sauce_name');
+            $table->foreignId('restaurant_id');
             $table->string('unit_cost');
             $table->timestamps();
         });
