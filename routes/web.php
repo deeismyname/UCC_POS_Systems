@@ -29,7 +29,8 @@ Route::get('/dashboard', function () {
 
 Route::get('/menu', [MenuController::class, 'index']);
 Route::post('/menu', [MenuController::class, 'store'])->name('menu');
-Route::get("/menu/{menu}/edit_menu", [MenuController::class, 'edit'])->name('update_menu');
+Route::get("/menu/{menu}/edit_menu", [MenuController::class, 'edit'])->name('edit_menu');
+Route::patch("/menu/{menu}/", [MenuController::class, 'edit'])->name('update_menu');
 
 Route::get('/inventory', [InventoryController::class, 'index']);
 Route::post('/inventory', [InventoryController::class, 'store'])->name('inventory');

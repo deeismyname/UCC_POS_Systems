@@ -1,11 +1,6 @@
 @extends('layouts.main')
 @section('content')
-
-
-
-
-
-{{-- <div class="bg-black bg-opacity-50 absolute inset-0 hidden justify-center items-center" id="overlay">
+    {{-- <div class="bg-black bg-opacity-50 absolute inset-0 hidden justify-center items-center" id="overlay">
     <div class="bg-gray-200 max-w-sm py-2 px-3 rounded shadow-xl text-gray-800">
         <div class="flex justify-between items-center">
             <h4 class="text-lg font-bold">Add dish details</h4>
@@ -15,16 +10,16 @@
                     clip-rule="eveno`dd"></path>
             </svg>
         </div> --}}
-        
-        <div class="mt-2 text-sm">
-            <form action="{{route('update_menu',$menu->id)}}" method="POST">
-                @csrf
-                @method('patch')
-                <input type="text" name="menu_name" placeholder="enter dish name">
-                <input type="text" name="unit_cost" placeholder="unit cost (without symbol)">
 
-                <div class="repeat">
-                    <h4>Repeat menu on:</h4>
+    <div class="mt-2 text-sm">
+        <form action="{{ route('update_menu', $menu->id) }}" method="POST">
+            @method('patch')
+            @csrf
+            <input type="text" name="menu_name" placeholder="enter dish name">
+            <input type="text" name="unit_cost" placeholder="unit cost (without symbol)">
+
+            <div class="repeat">
+                <h4>Repeat menu on:</h4>
                 <input type="checkbox" id="Monday" name="reuse[]" value="Monday">
                 <label for="Monday"> Monday</label><br>
                 <input type="checkbox" id="Teusday" name="reuse[]" value="Teusday">
@@ -40,21 +35,20 @@
                 <input type="checkbox" id="Sunday" name="reuse[]" value="Sunday">
                 <label for="Sunday"> Sunday</label><br>
                 {{-- <input type="text" name="reuse" placeholder="enter the days you want the menu to be repeated seperated by a comma"> --}}
-                </div>
+            </div>
 
-                <div>
-                    <x-menu_modal_in_modal/>
+            <div>
+                <x-menu_modal_in_modal />
 
-                </div>
+            </div>
 
-                <div class="mt-3 flex justify-end space-x-3">
-                    <button class="px-3 py-1 rounded hover:bg-red-500 hover:bg-opacity-10 hover:text-white-500">Cancel</button>
-                    <button type="submit" class="px-3 py-1 bg-green-300 text-gray-600 hover:bg-green-800 rounded">Add</button>
+            <div class="mt-3 flex justify-end space-x-3">
+                <button class="px-3 py-1 rounded hover:bg-red-500 hover:bg-opacity-10 hover:text-white-500">Cancel</button>
+                <button type="submit" class="px-3 py-1 bg-green-300 text-gray-600 hover:bg-green-800 rounded">Add</button>
 
-                </div>
-               </form>
-        </div>
+            </div>
+        </form>
     </div>
-</div>
+    </div>
+    </div>
 @endsection
-

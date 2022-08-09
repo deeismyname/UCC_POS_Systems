@@ -39,12 +39,11 @@ class MenuController extends Controller
         $attributes = $request->validate([
             'menu_name' => 'required | max:255',
             'unit_cost' => 'required | max:255',
-             'reuse' => 'max:255',
-             'reuse*' => 'max:255',
-             'description' => 'max:255',
-             'description*' => 'max:255'
+            'reuse' => 'max:255',
+            'reuse*' => 'max:255',
+            'description' => 'max:255',
+            'description*' => 'max:255',
         ]);
-
 
         Menu::create($attributes);
 
@@ -58,7 +57,8 @@ class MenuController extends Controller
      * @param  \App\Models\menu  $menu
      * @return \Illuminate\Http\Response
      */
-    public function show(menu $menu){
+    public function show(menu $menu)
+    {
 
     }
     /**
@@ -70,8 +70,8 @@ class MenuController extends Controller
     public function edit(menu $menu)
     {
         return view('edit_menu',
-        ['menu' =>$menu]
-    );
+            ['menu' => $menu]
+        );
     }
 
     /**
@@ -83,14 +83,17 @@ class MenuController extends Controller
      */
     public function update(Request $request, menu $menu)
     {
-     $request->validate([
-            "menu_name" => "max:255",
-            "reuse" => "max:255",
-            "unit_cost" => "max:255",
-            "description" => "max:255"
+        $attributes = $request->validate([
+            'menu_name' => 'required | max:255',
+            'unit_cost' => 'required | max:255',
+            'reuse' => 'max:255',
+            'reuse*' => 'max:255',
+            'description' => 'max:255',
+            'description*' => 'max:255',
         ]);
 
-        $menu->update($request->all());
+        $menu->update($attributes);
+        redirect(route('menu'));
     }
 
     /**
