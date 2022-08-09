@@ -15,16 +15,34 @@
                     clip-rule="eveno`dd"></path>
             </svg>
         </div> --}}
-        
+
         <div class="mt-2 text-sm">
             <form action="{{route('update_menu',$menu->id)}}" method="POST">
                 @csrf
                 @method('patch')
-                <input type="text" name="menu_name" placeholder="enter dish name">
-                <input type="text" name="unit_cost" placeholder="unit cost (without symbol)">
+                <input type="text" name="menu_name" placeholder="enter dish name" value="{{old('menu_name') ?? $menu->menu_name}}">
+                <input type="text" name="unit_cost" placeholder="unit cost (without symbol)" value="{{old('unit_cost') ?? $menu->unit_cost}}">
 
                 <div class="repeat">
-                    <h4>Repeat menu on:</h4>
+                    @foreach ($menu->reuse as $reuse)
+
+                    @foreach ($days as $day)
+                    @if ($day == $reuse)
+                        <input type="checkbox" id="Monday" name="reuse[]" value=""  checked>
+                        <label for="Monday"> {{$day}}</label><br>
+
+                    @else
+                        <input type="checkbox" id="Monday" name="reuse[]" value="">
+                        <label for="Monday"> {{$day}}</label><br>
+
+                    @endif
+
+                    @endforeach
+                    {{-- {{dd($reuse)}} --}}
+
+                    @endforeach
+
+                    {{-- <h4>Repeat menu on:</h4>
                 <input type="checkbox" id="Monday" name="reuse[]" value="Monday">
                 <label for="Monday"> Monday</label><br>
                 <input type="checkbox" id="Teusday" name="reuse[]" value="Teusday">
@@ -38,7 +56,7 @@
                 <input type="checkbox" id="Saturday" name="reuse[]" value="Saturday">
                 <label for="Saturday"> Saturday</label><br>
                 <input type="checkbox" id="Sunday" name="reuse[]" value="Sunday">
-                <label for="Sunday"> Sunday</label><br>
+                <label for="Sunday"> Sunday</label><br> --}}
                 {{-- <input type="text" name="reuse" placeholder="enter the days you want the menu to be repeated seperated by a comma"> --}}
                 </div>
 

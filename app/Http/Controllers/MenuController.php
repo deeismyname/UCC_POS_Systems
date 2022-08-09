@@ -69,8 +69,10 @@ class MenuController extends Controller
      */
     public function edit(menu $menu)
     {
-        return view('edit_menu',
-        ['menu' =>$menu]
+        // dd($menu);
+        $days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Sataurday", "Sunday"];
+        return view('edit_menu' ,
+        ['menu' =>$menu, 'days'=>$days]
     );
     }
 
