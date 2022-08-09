@@ -1,21 +1,25 @@
-$menu
-<button class="px-6 py-3 bg-blue-600 text-gray-100 rounded shadow" id="delete-btn">
-    Edit <i class="fas fa-edit"></i>
-</button>
+@extends('layouts.main')
+@section('content')
 
-<div class="bg-black bg-opacity-50 absolute inset-0 hidden justify-center items-center" id="overlay">
+
+
+
+
+{{-- <div class="bg-black bg-opacity-50 absolute inset-0 hidden justify-center items-center" id="overlay">
     <div class="bg-gray-200 max-w-sm py-2 px-3 rounded shadow-xl text-gray-800">
         <div class="flex justify-between items-center">
             <h4 class="text-lg font-bold">Add dish details</h4>
             <svg class="h-6 w-6 cursor-pointer p-1 hover:bg-gray-300 rounded-full" id="close-modal" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd"
                     d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                    clip-rule="evenodd"></path>
+                    clip-rule="eveno`dd"></path>
             </svg>
-        </div>
+        </div> --}}
+        {{-- {{dd($menu)}} --}}
         <div class="mt-2 text-sm">
-            <form action="{{route('menu')}}" method="POST">
+            <form action="{{route('update_menu'),$menu->id}}" method="POST">
                 @csrf
+                @method('patch')
                 <input type="text" name="menu_name" placeholder="enter dish name">
                 <input type="text" name="unit_cost" placeholder="unit cost (without symbol)">
 
@@ -52,8 +56,9 @@ $menu
         </div>
     </div>
 </div>
+@endsection
 
-<script>
+{{-- <script>
     window.addEventListener('DOMContentLoaded', () =>{
         const overlay = document.querySelector('#overlay')
         const delBtn = document.querySelector('#delete-btn')
@@ -68,4 +73,4 @@ $menu
         closeBtn.addEventListener('click', toggleModal)
     })
 
-</script>
+</script> --}}
