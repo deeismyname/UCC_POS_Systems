@@ -1,5 +1,6 @@
-<button class="px-6 py-3 bg-green-600 text-gray-100 rounded shadow" id="delete-btn">
-    Add Dish <i class="fa fa-plus-circle"></i>
+$menu
+<button class="px-6 py-3 bg-blue-600 text-gray-100 rounded shadow" id="delete-btn">
+    Edit <i class="fas fa-edit"></i>
 </button>
 
 <div class="bg-black bg-opacity-50 absolute inset-0 hidden justify-center items-center" id="overlay">
@@ -64,7 +65,6 @@
         }
 
         delBtn.addEventListener('click', toggleModal)
-
         closeBtn.addEventListener('click', toggleModal)
     })
 

@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\MenuController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MenuController;
+use App\Http\Controllers\OrdersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,12 +30,13 @@ Route::get('/dashboard', function () {
 
 Route::get('/menu', [MenuController::class,'index']);
 Route::post('/menu',[MenuController::class, 'store'])->name('menu');
+Route::get("/menu/menu:id",[MenuController::class, 'edit'])->name('update_menu');
 
-Route::get('/inventory', [MenuController::class,'index']);
-Route::post('/inventory',[MenuController::class, 'store'])->name('inventory');
+Route::get('/inventory', [InventoryController::class,'index']);
+Route::post('/inventory',[InventoryController::class, 'store'])->name('inventory');
 
-Route::get('/orders', [MenuController::class,'index']);
-Route::post('/orders',[MenuController::class, 'store'])->name('orders');
+Route::get('/orders', [OrdersController::class,'index']);
+Route::post('/orders',[OrdersController::class, 'store'])->name('orders');
 
 Route::get('/settings', function () {
     return view('settings');

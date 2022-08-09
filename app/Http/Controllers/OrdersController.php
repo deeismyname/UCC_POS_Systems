@@ -14,7 +14,8 @@ class OrdersController extends Controller
      */
     public function index()
     {
-        //
+        $orders = Orders::latest()->get();
+        return view('orders', ['orders' => $orders]);
     }
 
     /**
@@ -24,7 +25,7 @@ class OrdersController extends Controller
      */
     public function create()
     {
-        //
+       //
     }
 
     /**
@@ -35,7 +36,9 @@ class OrdersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $attributes = $request->validate([
+
+        ]);
     }
 
     /**
