@@ -17,7 +17,7 @@
         </div> --}}
         
         <div class="mt-2 text-sm">
-            <form action="{{route('update_menu'),$menu->id}}" method="POST">
+            <form action="{{route('update_menu',$menu->id)}}" method="POST">
                 @csrf
                 @method('patch')
                 <input type="text" name="menu_name" placeholder="enter dish name">
