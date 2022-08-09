@@ -15,7 +15,7 @@
                     clip-rule="eveno`dd"></path>
             </svg>
         </div> --}}
-        {{-- {{dd($menu)}} --}}
+        
         <div class="mt-2 text-sm">
             <form action="{{route('update_menu'),$menu->id}}" method="POST">
                 @csrf
@@ -58,19 +58,3 @@
 </div>
 @endsection
 
-{{-- <script>
-    window.addEventListener('DOMContentLoaded', () =>{
-        const overlay = document.querySelector('#overlay')
-        const delBtn = document.querySelector('#delete-btn')
-        const closeBtn = document.querySelector('#close-modal')
-
-        const toggleModal = () => {
-            overlay.classList.toggle('hidden')
-            overlay.classList.toggle('flex')
-        }
-
-        delBtn.addEventListener('click', toggleModal)
-        closeBtn.addEventListener('click', toggleModal)
-    })
-
-</script> --}}
