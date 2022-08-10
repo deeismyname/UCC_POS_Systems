@@ -9,6 +9,10 @@ class orders extends Model
 {
     use HasFactory;
 
-    // protected $table = 'orders';
-    // protected $fillable = ['sauce_name', 'unit_cost'];
+    protected $casts = [
+        'components' => 'array'
+    ];
+
+    // protected $fillable = ['menu_name', 'unit_cost', 'customize', 'description'];
+    protected $guarded = ['id'];
 }

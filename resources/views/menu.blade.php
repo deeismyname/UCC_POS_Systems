@@ -26,12 +26,14 @@
 
             </div>
 
-            <div class="order_edit_delete" style="display: flex">
+            {{-- <div class="order_edit_delete" style="display: flex">
 
-                <div class="edit" id="order"><button class="px-6 py-3 bg-green-600 text-gray-100 rounded shadow" id="order-btn">
-                    Order <i class="fas fa-box"></i>
-                </button></div><span class="space" style="margin: 2rem"></span>
+                <form action="">
+                    <div class="edit" id="order"><button class="px-6 py-3 bg-green-600 text-gray-100 rounded shadow" id="order-btn">
+                        Order <i class="fas fa-box"></i>
+                    </button></div><span class="space" style="margin: 2rem"></span>
 
+                </form>
 
                 <form action="/menu/{{$menu->id}}/edit_menu" method="get">
                     <div class="edit" id="order"><button class="px-6 py-3 bg-blue-600 text-gray-100 rounded shadow" id="delete-btn">
@@ -39,15 +41,20 @@
                     </button></div>
                 </form><span class="space" style="margin: 2rem"></span>
 
-                {{-- <div class="edit" id="edit">
-                    <a href="{{route('update_menu', $menu->id)}}"><x-edit_menu/></a>
 
-                </div><span class="space" style="margin: 2rem"></span> --}}
 
-                <div class="edit" id="delete"><button class="px-6 py-3 bg-red-600 text-gray-100 rounded shadow" id="delete-btn">
-                    Delete <i class="fas fa-trash"></i>
-                </button></div><span class="space" style="margin: 2rem"></span>
+                <form action="">
+                    <div class="edit" id="delete"><button class="px-6 py-3 bg-red-600 text-gray-100 rounded shadow" id="delete-btn">
+                        Delete <i class="fas fa-trash"></i>
+                    </button></div><span class="space" style="margin: 2rem"></span>
+                </form>
+            </div> --}}
+
+            <div style="border:5px solid blue width:20px">
+                <a href="/menu/{{$menu->id}}/edit_menu">Edit</a>
             </div>
+
+
 
         @endforeach
     </div>
@@ -81,3 +88,5 @@
         padding: 3px;
     }
 </style>
+
+

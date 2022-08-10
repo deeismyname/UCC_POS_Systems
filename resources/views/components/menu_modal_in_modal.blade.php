@@ -11,6 +11,7 @@
       <a href="#" id="remove_last_description"><i class="fa fa-minus"></i>Remove description</a>
     </div>
   </div>
+  
 
 
 <script>

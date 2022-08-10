@@ -1,6 +1,10 @@
-<button class="px-6 py-3 bg-green-600 text-gray-100 rounded shadow" id="delete-btn">
-    Add Dish <i class="fa fa-plus-circle"></i>
-</button>
+<div class="add_menu">
+    <button class="px-6 py-3 bg-green-600 text-gray-100 rounded shadow" id="delete-btn">
+
+        Add Dish
+        <i class="fa fa-plus-circle"></i>
+    </button>
+</div>
 
 <div class="bg-black bg-opacity-50 absolute inset-0 hidden justify-center items-center" id="overlay">
     <div class="bg-gray-200 max-w-sm py-2 px-3 rounded shadow-xl text-gray-800">
@@ -51,6 +55,8 @@
         </div>
     </div>
 </div>
+
+<link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
 
 <script>
     window.addEventListener('DOMContentLoaded', () =>{

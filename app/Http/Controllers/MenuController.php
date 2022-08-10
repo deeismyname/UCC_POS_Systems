@@ -85,11 +85,14 @@ class MenuController extends Controller
      */
     public function update(Request $request, menu $menu)
     {
+        dd($request);
      $request->validate([
-            "menu_name" => "max:255",
-            "reuse" => "max:255",
-            "unit_cost" => "max:255",
-            "description" => "max:255"
+        'menu_name' => 'required | max:255',
+        'unit_cost' => 'required | max:255',
+         'reuse' => 'max:255',
+         'reuse*' => 'max:255',
+         'description' => 'max:255',
+         'description*' => 'max:255'
         ]);
 
         $menu->update($request->all());
