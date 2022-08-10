@@ -90,6 +90,7 @@ class MenuController extends Controller
         'menu_name' => 'required | max:255',
         'unit_cost' => 'required | max:255',
          'reuse' => 'max:255',
+
          'reuse*' => 'max:255',
          'description' => 'max:255',
          'description*' => 'max:255'

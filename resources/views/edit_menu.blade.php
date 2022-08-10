@@ -60,6 +60,29 @@
                 {{-- <input type="text" name="reuse" placeholder="enter the days you want the menu to be repeated seperated by a comma"> --}}
                 </div>
 
+
+
+                <div class="repeat">
+                    @foreach ($menu->description as $description)
+
+                    {{-- @foreach ($days as $day) --}}
+                    @if ($day == $reuse)
+                        <input type="checkbox" id="Monday" name="reuse[]" value=""  checked>
+                        <label for="Monday"> {{$day}}</label><br>
+
+                    @else
+                        <input type="checkbox" id="Monday" name="reuse[]" value="">
+                        <label for="Monday"> {{$day}}</label><br>
+
+                    @endif
+
+                    {{-- @endforeach --}}
+                    {{-- {{dd($reuse)}} --}}
+
+                    @endforeach
+                </div>
+
+
                 <div>
                     <x-menu_modal_in_modal/>
 
